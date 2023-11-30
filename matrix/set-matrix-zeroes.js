@@ -121,3 +121,33 @@ var setZeroes = function(matrix) {
 };
 
 */
+
+/*
+// Leet Code solution
+var setZeroes = function(matrix) {
+    for(let i = 0 ; i < matrix.length ; i++) {
+        for(let j = 0 ; j < matrix[0].length ; j++) {
+            if(matrix[i][j] === 0)
+                zeRows(matrix, i, j)
+        }
+    }
+
+    for(let i = 0 ; i < matrix.length ; i++) {
+        for(let j = 0 ; j < matrix[0].length ; j++) {
+            if(matrix[i][j] === "0")
+                matrix[i][j] = 0
+        }
+    }
+};
+
+const zeRows = (matrix, i, j) => {
+    for(let jj = 0 ; jj < matrix[0].length ; jj++) {
+        if(matrix[i][jj] === 0) continue
+        matrix[i][jj] = "0"
+    }
+    for(let ii = 0 ; ii < matrix.length ; ii++) {
+        if(matrix[ii][j] === 0) continue
+        matrix[ii][j] = "0"
+    }
+}
+*/
